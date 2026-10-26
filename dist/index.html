@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Palabras</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Buscador de Palabras</h1>
+        
+        <!-- Textarea para el texto principal -->
+        <div class="grupo">
+            <label>Escribe o pega tu texto:</label>
+            <textarea id="cajaTexto" placeholder="Escribe aquí tu texto..."></textarea>
+        </div>
+
+        <!-- Input para la palabra o caracter a buscar -->
+        <div class="grupo">
+            <label>Palabra o carácter a buscar:</label>
+            <input type="text" id="palabraBuscar" placeholder="Palabra a buscar...">
+        </div>
+
+        <!-- Botones -->
+        <div class="botones">
+            <button id="btnBuscar">Buscar</button>
+            <button id="btnLimpiar">Limpiar</button>
+        </div>
+
+        <!-- Resultados -->
+        <div class="resultado-seccion">
+            <h3>Veces encontrada: <span id="contador">0</span></h3>
+            <h3>Texto procesado:</h3>
+            <div id="textoResaltado" class="caja-resultado"></div>
+        </div>
+    </div>
+
+    <!-- Script generado por Webpack -->
+    <script src="bundle.js"></script>
+</body>
+</html>

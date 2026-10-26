@@ -1,0 +1,137 @@
+/* Fondo general estilo terminal / hacker */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Contenedor principal con tarjeta oscura y borde de neón cian */
+.contenedor {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #161b22;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #00f0ff;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+.grupo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #8b949e;
+    font-size: 14px;
+}
+
+/* Campos de texto oscuros con bordes sutiles */
+textarea, input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+textarea:focus, input:focus {
+    border-color: #00f0ff;
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.botones {
+    margin-bottom: 25px;
+    display: flex;
+    gap: 12px;
+}
+
+/* Botones con estilo tecnológico */
+button {
+    flex: 1;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.1s ease, filter 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#btnBuscar {
+    background-color: #238636;
+    color: white;
+    box-shadow: 0 0 10px rgba(35, 134, 54, 0.4);
+}
+
+#btnBuscar:hover {
+    background-color: #2ea043;
+}
+
+#btnLimpiar {
+    background-color: #da3633;
+    color: white;
+    box-shadow: 0 0 10px rgba(218, 54, 51, 0.4);
+}
+
+#btnLimpiar:hover {
+    background-color: #f85149;
+}
+
+.resultado-seccion {
+    border-top: 1px solid #30363d;
+    padding-top: 15px;
+}
+
+.resultado-seccion h3 {
+    color: #f0f6fc;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Caja de resultados oscura */
+.caja-resultado {
+    background: #0d1117;
+    padding: 15px;
+    border-radius: 6px;
+    min-height: 70px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    color: #e6edf3;
+    border: 1px solid #30363d;
+}
+
+/* Estilo para resaltar la palabra encontrada (neón amarillo/verde) */
+mark {
+    background-color: #d29922;
+    color: #0d1117;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}
